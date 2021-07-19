@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pulse</title>
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/slick.css" />
@@ -103,14 +104,9 @@
           Просто заполните форму заявки <br />
           и мы перезвоним вам в течении 10 минут
         </div>
-        <form class="feed-form" action="#">
-          <input name="name" required placeholder="Ваше имя" type="text" />
-          <input
-            name="phone"
-            required
-            placeholder="Ваш телефон"
-            type="number"
-          />
+        <form id="consultation-form" class="feed-form" action="#">
+          <input name="name" placeholder="Ваше имя" type="text" />
+          <input name="phone" required placeholder="Ваш телефон" />
           <input
             name="email"
             required
@@ -136,7 +132,7 @@
       <div class="container">
         <h2 class="title">Каталог пульсометров</h2>
         <ul class="catalog__tabs">
-          <li class="catalog__tab catalog__tab_active">
+          <li class="catalog__tab">
             <div>Для фитнеса</div>
           </li>
           <li class="catalog__tab"><div>для бега</div></li>
@@ -557,13 +553,8 @@
         <div class="modal__subtitle">Просто заполните форму заявки</div>
         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form" action="#">
-          <input name="name" required placeholder="Ваше имя" type="text" />
-          <input
-            name="phone"
-            required
-            placeholder="Ваш телефон"
-            type="number"
-          />
+          <input name="name" placeholder="Ваше имя" type="text" />
+          <input name="phone" required placeholder="Ваш телефон" />
           <input
             name="email"
             required
@@ -579,13 +570,8 @@
         <div class="modal__subtitle">Ваш заказ:</div>
         <div class="modal__descr">Пульсометр Polar FT1</div>
         <form class="feed-form" action="#">
-          <input name="name" required placeholder="Ваше имя" type="text" />
-          <input
-            name="phone"
-            required
-            placeholder="Ваш телефон"
-            type="number"
-          />
+          <input name="name" placeholder="Ваше имя" type="text" />
+          <input name="phone" required placeholder="Ваш телефон" />
           <input
             name="email"
             required
@@ -614,6 +600,8 @@
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
