@@ -124,4 +124,7 @@ $("a[href^='#']").click(function(){
     return false;
 });
 
+//wow
+new WOW().init();
+
 })(jQuery);
